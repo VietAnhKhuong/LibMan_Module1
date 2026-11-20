@@ -58,10 +58,8 @@
             request.setAttribute("outNotification", "Năm bắt đầu niên khóa không được sau năm hiện tại.");
         } else if (reader.getEndYear() < LocalDate.now().getYear()) {
             request.setAttribute("outNotification", "Niên khóa đã kết thúc, không thể đăng kí thẻ.");
-        } else if (!reader.getUsername().matches("^\\w{4,30}$")) {
-            request.setAttribute("outNotification", "Tên đăng nhập gồm 4 đến 30 ký tự: chữ cái, chữ số hoặc dấu gạch dưới.");
-        } else if (reader.getPassword().length() < 6) {
-            request.setAttribute("outNotification", "Mật khẩu phải có ít nhất 6 ký tự.");
+        } else if (!reader.getPassword().matches("^\\w{6,30}$")) {
+            request.setAttribute("outNotification", "Mật khẩu gồm 6 đến 30 ký tự: chữ cái, chữ số hoặc dấu gạch dưới.");
         } else if (!reader.getPassword().equals(request.getParameter("inConfirmPassword"))) {
             request.setAttribute("outNotification", "Mật khẩu và xác nhận mật khẩu không khớp.");
         }
