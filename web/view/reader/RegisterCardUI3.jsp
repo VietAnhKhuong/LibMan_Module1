@@ -185,30 +185,30 @@
                 <label for="inPhoneNumber">Số điện thoại</label>
                 <input type="text" id="inPhoneNumber" name="inPhoneNumber" maxlength="11" inputmode="numeric" autocomplete="tel"
                        value="<%= java.util.Objects.toString(reader.getPhoneNumber(), "").replace("&", "&amp;").replace("<", "&lt;").replace("\"", "&quot;") %>">
-                <p class="hint">9 đến 11 chữ số.</p>
+                <!--<p class="hint">9 đến 11 chữ số.</p>-->
             </div>
             <div class="field">
                 <label for="inStartYear">Năm bắt đầu niên khóa</label>
                 <input type="text" id="inStartYear" name="inStartYear" maxlength="4" inputmode="numeric"
                        value="<%= reader.getStartYear() == 0 ? "" : String.valueOf(reader.getStartYear()) %>">
-                <p class="hint">Ví dụ: 2023</p>
+                <!--<p class="hint">Ví dụ: 2023</p>-->
             </div>
             <div class="field">
                 <label for="inEndYear">Năm kết thúc niên khóa</label>
                 <input type="text" id="inEndYear" name="inEndYear" maxlength="4" inputmode="numeric"
                        value="<%= reader.getEndYear() == 0 ? "" : String.valueOf(reader.getEndYear()) %>">
-                <p class="hint">Ví dụ: 2027. Thẻ hết hạn vào 31/12 của năm này.</p>
+                <!--<p class="hint">Ví dụ: 2027. Thẻ hết hạn vào 31/12 của năm này.</p>-->
             </div>
             <div class="field">
                 <label for="inUsername">Tên đăng nhập</label>
                 <input type="text" id="inUsername" name="inUsername" maxlength="30" autocomplete="username"
                        value="<%= java.util.Objects.toString(reader.getUsername(), "").replace("&", "&amp;").replace("<", "&lt;").replace("\"", "&quot;") %>">
-                <p class="hint">4 đến 30 ký tự: chữ cái, chữ số hoặc dấu gạch dưới.</p>
+                <!--<p class="hint">4 đến 30 ký tự: chữ cái, chữ số hoặc dấu gạch dưới.</p>-->
             </div>
             <div class="field">
                 <label for="inPassword">Mật khẩu</label>
                 <input type="password" id="inPassword" name="inPassword" maxlength="72" autocomplete="new-password">
-                <p class="hint">Tối thiểu 6 ký tự.</p>
+                <!--<p class="hint">Tối thiểu 6 ký tự.</p>-->
             </div>
             <div class="field">
                 <label for="inConfirmPassword">Xác nhận mật khẩu</label>

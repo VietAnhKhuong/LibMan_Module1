@@ -97,7 +97,7 @@
     <% session.removeAttribute("flashMessage"); } %>
 
     <h1>Thư viện trường đại học</h1>
-    <p class="lead">Chưa có thẻ bạn đọc? Đăng kí trực tuyến để mượn tài liệu và tra cứu thông tin tài liệu của thư viện.</p>
+    <!--<p class="lead">Chưa có thẻ bạn đọc? Đăng kí trực tuyến để mượn tài liệu và tra cứu thông tin tài liệu của thư viện.</p>-->
 
     <form method="get" action="<%= request.getContextPath() %>/view/reader/RegisterCardUI3.jsp" class="actions">
         <button type="submit" class="btn" id="subRegisterCard" name="subRegisterCard">Đăng kí làm thẻ bạn đọc</button>
